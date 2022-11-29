@@ -3,6 +3,7 @@ package studio9;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import support.cse131.NotYetImplementedException;
 
@@ -28,9 +29,17 @@ public class WordCount {
 	 *         associated with the number of occurrences of the word
 	 */
 	public static Map<String, Integer> countWords(List<String> words) {
-
-		// FIXME
-		throw new NotYetImplementedException();
-
+		Map<String, Integer> countWords = new HashMap<>();
+		
+		for (String key : words) {
+			if(key.equals(words.get())) {
+				int value = 1;
+				countWords.put(key, value++);
+			} else
+				countWords.put(key, 1);
+			
+			System.out.println(countWords);
+		}
+		return countWords;
 	}
 }
